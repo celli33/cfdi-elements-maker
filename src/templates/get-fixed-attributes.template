@@ -1,4 +1,4 @@
-    public function getFixedAttributes(): Record<string, string>
+    public getFixedAttributes(): Record<string, string>
     {
         return {
             'xmlns:#prefix#': '#xml-namespace#',

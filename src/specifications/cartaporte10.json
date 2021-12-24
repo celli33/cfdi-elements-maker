@@ -1,0 +1,63 @@
+{
+    "prefix": "cartaporte",
+    "xml-namespace": "http://www.sat.gob.mx/cartaporte",
+    "xml-schemalocation": "http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte.xsd",
+    "version-attribute": "Version",
+    "version-value": "1.0",
+    "root-element": "CartaPorte",
+    "structure": {
+        "Ubicaciones": {
+            "Ubicacion": {
+                "multiple": true,
+                "Domicilio": {},
+                "Destino": {},
+                "Origen": {}
+            }
+        },
+        "Mercancias": {
+            "Mercancia": {
+                "multiple": true,
+                "CantidadTransporta": {"multiple": true},
+                "DetalleMercancia": {}
+            },
+            "AutotransporteFederal": {
+                "IdentificacionVehicular": {},
+                "Remolques": {
+                    "Remolque": {"multiple": true}
+                }
+            },
+            "TransporteMaritimo": {
+                "Contenedor": {"multiple": true}
+            },
+            "TransporteAereo": {},
+            "TransporteFerroviario": {
+                "DerechosDePaso": {"multiple": true},
+                "Carro": {
+                    "multiple": true,
+                    "Contenedor": {"multiple": true}
+                }
+            }
+        },
+        "FiguraTransporte": {
+            "Operadores": {
+                "multiple": true,
+                "Operador": {
+                    "multiple": true,
+                    "Domicilio": {}
+                }
+            },
+            "Propietario": {
+                "multiple": true,
+                "Domicilio": {}
+            },
+            "Arrendatario": {
+                "multiple": true,
+                "Domicilio": {}
+            },
+            "Notificado": {
+                "multiple": true,
+                "Domicilio": {}
+            }
+        }
+    }
+}

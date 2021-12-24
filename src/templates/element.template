@@ -3,9 +3,9 @@ import { CNodeInterface } from '@nodecfdi/cfdiutils-common';
 
 export class #element-name# extends AbstractElement
 {
-    public getElementName(): string
-    {
-        return '#prefix#:#element-name#';
+    constructor(attributes: Record<string, unknown> = {}, children: CNodeInterface[] = []) {
+        super('#prefix#:#element-name#', attributes, children);
     }
+    
     #sections#
 }

@@ -8,7 +8,7 @@
     public multi#child-name#(elementAttributes: Record<string, unknown>[] = []): #element-name#
     {
         elementAttributes.forEach(attributes => {
-            this.addadd#child-name#(attributes);
+            this.add#child-name#(attributes);
         });
         return this;
     }
