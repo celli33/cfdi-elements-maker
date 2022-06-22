@@ -1,0 +1,22 @@
+{
+    "prefix": "retenciones",
+    "xml-namespace": "http://www.sat.gob.mx/esquemas/retencionpago/2",
+    "xml-schemalocation": "http://www.sat.gob.mx/esquemas/retencionpago/2/retencionpagov2.xsd",
+    "version-attribute": "Version",
+    "version-value": "2.0",
+    "root-element": "Retenciones",
+    "structure": {
+        "CfdiRetenRelacionados": {},
+        "Emisor": {},
+        "Receptor": {
+            "Nacional": {},
+            "Extranjero": {}
+        },
+        "Periodo": {},
+        "Totales": {
+            "ImpRetenidos": {}
+        },
+        "Complemento": {},
+        "Addenda": {}
+    }
+}
